@@ -1,0 +1,56 @@
+.add-form {
+    font-size: large;
+    text-align: left;
+    background-color: azure;
+    float: left;
+}
+
+.btn-save {
+    text-align: center;
+    font: bold 16px sans-serif;
+    text-decoration: none !important;
+    color: white !important;
+    border-radius: 5px;
+    line-height: 34px;
+    width: 206px;
+    height: 34px;
+    float: left;
+    background: linear-gradient(to right, #FC1542, #FB1260);
+}
+
+@media (max-width: 768px) {
+    .button_reg {
+        margin: 0 auto 10px;
+        text-align: center;
+        font: bold 16px sans-serif;
+        text-decoration: none !important;
+        color: white !important;
+        border-radius: 5px;
+        line-height: 34px;
+        width: 206px;
+        height: 34px;
+        display: block;
+        background: linear-gradient(to right, #FC1542, #FB1260);
+    }
+}
+
+.button_reg:hover {
+    background: linear-gradient(to right, #FC3419, #F93419);
+}
+
+.add-form div {
+    clear: both;
+    text-align: right;
+    line-height: 25px;
+}
+
+label {
+    float: left;
+    padding-right: 10px;
+}
+
+.add-form .description {
+    width: 190px;
+    height: 100px;
+
+}

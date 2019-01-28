@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"/>
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+</head>
+<body>
+<div id="content">
+    {% block content %}
+        {% for product in products %}
+            <tr>
+                <li>id :{{ product.id }}</li>
+                <li>name :{{ product.name }}</li>
+                <li>description :{{ product.description }}</li>
+                {% if product.shadeLoving == false %}
+                    <li>shadeLoving :false</li>
+                {% else %}
+                    <li>shadeLoving :true</li>
+                {% endif %}
+                {% if product.perennialAnnual == false %}
+                    <li>perennialAnnual :false</li>
+                {% else %}
+                    <li>perennialAnnual :true</li>
+                {% endif %}
+                <li>height :{{ product.height }} cm</li>
+                <li>color :{{ product.color }}</li>
+                {% if product.cut == false %}
+                    <li>Cut :false</li>
+                {% else %}
+                    <li>Cut :true</li>
+                {% endif %}
+                <li>price :{{ product.price }}$</li>
+                <ul>image :<img src="{{ asset(product.imagePath) }}"/></ul>
+            </tr>
+        {% endfor %}
+    {% endblock %}
+</div>
+<div id="footer">
+    {% block footer %}
+        &copy; Copyright 2011 by <a href="http://domain.invalid/">Link</a>.
+    {% endblock %}
+</div>
+</body>
 </html>

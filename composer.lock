@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cee4085fe3fa88057621162b3c43239f",
+    "content-hash": "97af0ce2e70974f9e35766d789b79550",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -944,12 +944,12 @@
             "version": "v2.6.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
+                "url": "https://github.com/doctrine/orm.git",
                 "reference": "434820973cadf2da2d66e7184be370084cc32ca8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/434820973cadf2da2d66e7184be370084cc32ca8",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/434820973cadf2da2d66e7184be370084cc32ca8",
                 "reference": "434820973cadf2da2d66e7184be370084cc32ca8",
                 "shasum": ""
             },
@@ -2057,6 +2057,28 @@
             "time": "2018-09-11T07:12:52+00:00"
         },
         {
+            "name": "symfony/apache-pack",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "shasum": ""
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "time": "2017-12-12T01:46:35+00:00"
+        },
+        {
             "name": "symfony/asset",
             "version": "v4.2.1",
             "source": {
@@ -2926,16 +2948,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v4.2.1",
+            "version": "v4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "5ab767b7732154ca6f45c92e30e081178edf30ad"
+                "reference": "3361332a168850dc8b3abd133553f66c0cb28b1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/5ab767b7732154ca6f45c92e30e081178edf30ad",
-                "reference": "5ab767b7732154ca6f45c92e30e081178edf30ad",
+                "url": "https://api.github.com/repos/symfony/form/zipball/3361332a168850dc8b3abd133553f66c0cb28b1c",
+                "reference": "3361332a168850dc8b3abd133553f66c0cb28b1c",
                 "shasum": ""
             },
             "require": {
@@ -3004,7 +3026,7 @@
             ],
             "description": "Symfony Form Component",
             "homepage": "https://symfony.com",
-            "time": "2018-12-06T11:36:58+00:00"
+            "time": "2019-01-05T16:37:49+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -5677,16 +5699,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.10.0",
+            "version": "v1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "aa37ea1323ac888913bdd3e5f83d846798729449"
+                "reference": "2ba2b563a6ca17cd7723b451b9ed4702ece9d8ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/aa37ea1323ac888913bdd3e5f83d846798729449",
-                "reference": "aa37ea1323ac888913bdd3e5f83d846798729449",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/2ba2b563a6ca17cd7723b451b9ed4702ece9d8ae",
+                "reference": "2ba2b563a6ca17cd7723b451b9ed4702ece9d8ae",
                 "shasum": ""
             },
             "require": {
@@ -5739,7 +5761,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2018-12-13T18:54:47+00:00"
+            "time": "2018-12-20T19:51:03+00:00"
         },
         {
             "name": "symfony/panther",
@@ -5812,16 +5834,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v4.2.1",
+            "version": "v4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "3f03b625710f24071e2937e88112e9a19099c9eb"
+                "reference": "4d53b78ee50da242dffa4eb91ea1f0ee084945c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/3f03b625710f24071e2937e88112e9a19099c9eb",
-                "reference": "3f03b625710f24071e2937e88112e9a19099c9eb",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/4d53b78ee50da242dffa4eb91ea1f0ee084945c5",
+                "reference": "4d53b78ee50da242dffa4eb91ea1f0ee084945c5",
                 "shasum": ""
             },
             "require": {
@@ -5874,7 +5896,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2018-11-26T10:55:26+00:00"
+            "time": "2019-01-03T09:07:35+00:00"
         },
         {
             "name": "symfony/polyfill-php72",

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="{{ asset('assets/css/productAddPage.css') }}"/>
+        <title>{% block title %}{% endblock %} SavedOk</title>
+    {% endblock %}
+</head>
+<body>
+<div id="content">
+    {% block content %}
+        {{ form_start(form, {attr:{class: 'add-form'} }) }}
+            {{ form_row(form.name, {'attr':{'class': 'my-name_field-class'}}) }}
+            {{ form_row(form.color) }}
+            {{ form_row(form.cut) }}
+            {{ form_row(form.height) }}
+            {{ form_row(form.groundCover) }}
+            {{ form_row(form.perennialAnnual) }}
+            {{ form_row(form.shadeLoving) }}
+            {{ form_row(form.price) }}
+            {{ form_row(form.imagePath) }}
+            {{ form_row(form.description, {'attr': {'class': 'description'}}) }}
+        {{ form_row(form.Save, {'attr': {'class': 'btn-save'}}) }}
+        {{ form_end(form) }}
+        {% for message in app.flashes('success') %}
+            <div class="flash-notice">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% if mess is defined %}
+            {{ mess }}
+        {% endif %}
+    {% endblock %}
+</div>
+</body>
+</html>
